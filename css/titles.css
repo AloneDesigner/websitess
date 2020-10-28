@@ -1,0 +1,21 @@
+@import url('https://www.dafont.com/the-next-font.font');
+
+
+baslik {
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+  z-index: 1;
+    font-family: "The Next Font","sans-serif";
+}
+
+baslik:after {
+  content: '';
+  background-color: #006eff;
+  height: 4px;
+  display: block;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 100%;
+}

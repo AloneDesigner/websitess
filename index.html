@@ -1,0 +1,456 @@
+<html lang="tr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="javascript/theme.js"></script>
+    <script defer src="javascript/back.js"></script>
+	    <script defer src="javascript/form.js"></script>
+  <link rel="stylesheet" href="css/titles.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/button.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/dark.css" />
+
+  <link rel="stylesheet" href="css/navmation.css" />
+  <link rel="stylesheet" href="css/boostrap.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/back.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  new Crate({
+    server: '769918644061863956', // Arix Market
+    channel: '770070758243696660' // #chat
+  })
+</script>
+<!--=============== BUTTONS =================-->
+<style>
+.darkmodebutton {
+  border-radius: 4px;
+  background-color: #3f82ff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 60px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 225px;
+    content: '\f042';
+
+}
+</style>
+<!--=============== BUTTONS =================-->
+
+<!--=============== DARK MODE =================-->
+<style>
+:root {
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  margin: 0 auto;
+  font-size: calc(1rem + 0.25vh);
+ transition: background-color 1s;
+  transition: color 1s;
+
+}
+
+
+/*slider switch css */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+  
+}
+
+input:checked + .slider {
+  background-color: #000;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+<!--============= DARK MODE END ===============-->
+
+<a id="index"></a>
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  
+
+   <!-- NAVBAR -->
+  <nav  style="background-color:  rgb(0, 89, 255); box-shadow: 0px 2px 10px #000;" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" style="color: #fff" id="anasayfa">Arix Market</a>
+      </div>
+      <div class="header pullUp">
+      <ul class="nav navbar-nav nav-links">
+        <li><a style="color: #fff" id="anasayfaa">Anasayfa</a></li>
+        <li><a style="color: #fff" id="contactt">İletişim</a></li>
+        <li><a style="color: #fff" id="objetcss">Ürünler</a></li>
+		
+      </ul>
+    </div>
+	      <div class="header pullUp">
+      <ul style="float:right" class="nav navbar-nav nav-links">	
+		  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+<div class="darkmodebutton" style="color: #fff"><i class="fa fa-adjust fa-2x" aria-hidden="true"></i></div>
+</label>
+</div>
+      </ul>
+    </div>
+	
+
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <!-- NAVBAR END -->
+
+
+<script>
+  
+$("#anasayfa").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#index").offset().top
+    }, 2000);
+});
+$("#anasayfaa").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#index").offset().top
+    }, 2000);
+});
+$("#contactt").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 2000);
+});
+$("#objetcss").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#objetcs").offset().top
+    }, 2000);
+});
+$("#aboutt").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 2000);
+});
+function discord() {
+var answer = window.confirm("Bu sayfadan ayrılıyorsunuz.");
+if (answer) {
+    location.href='https://discord.gg/smGDqPU';
+}
+else {
+}
+}
+
+</script>
+<!-- ========== HEADER ============== -->
+<header>
+    <h1>Arix Market</h1>
+<h3 style="color: #fff">Kendi botunuza sahip olun!</h3>
+<p style="color: #fff">Arix Market, sizlere discord bot, website tarzı kodlar satın almak için çok doğru yerdesin!</p>
+<button class="discordbutton"><span>Discorda Katıl </span></button>
+</header>
+
+
+
+<script>
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    else {        document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+</script>
+
+<!-- ========== HEADER END ========= -->
+
+<!-- ========== PRICING ============== -->
+    
+    <br><br><br>
+    <center><baslik id="objetcs">Botlar</baslik></center>
+	<section class="pricing_area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div id="fast-transition"  class="pricing_item ">
+						<h3 class="p_title">Kayıt Botu</h3>
+						<h1 class="p_price">20<small style="color: #fff">₺</small></h1>
+						<div class="p_list">
+							<ul>
+								<li>Her sunucuda kullanılabilir.</li>
+								<li>Ekstra 3 adet komut ekletme hakkı.</li>
+							</ul>
+						</div>
+              <button class="btn-hover color-9" onclick="discord()">Satın Al</button>
+
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="pricing_item">
+						<h3 class="p_title">Guard Botu</h3>
+						<h1 class="p_price">25<small style="color: #fff">₺</small></h1>
+						<div class="p_list">
+							<ul>
+								<li>Her sunucuda kullanılabilir.</li>
+								<li>2 adet dil desteği mevcuttur.</li>
+								<li>Ekstra 2 adet komut ekletme hakkı.</li>
+							</ul>
+            </div>
+            
+              <button class="btn-hover color-9" onclick="discord()">Satın Al</button>
+          </div>
+          
+        </div>
+						<div class="col-lg-4 col-md-6">
+					<div class="pricing_item">
+						<h3 class="p_title">Karışık Bot</h3>
+						<h1 class="p_price">35<small style="color: #fff">₺</small></h1>
+						<div class="p_list">
+							<ul>
+								<li>Her sunucuda kullanılabilir.</li>
+								<li>İçinde 100<small>+</small> komut barındırır.</li>
+							</ul>
+            </div>
+            
+              <button class="btn-hover color-9" onclick="discord()">Satın Al</button>
+          </div>
+          
+        </div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="pricing_item ">
+						<h3 class="p_title">Eğlence Botu</h3>
+						<h1 class="p_price">20<small style="color: #fff">₺</small></h1>
+						<div class="p_list">
+							<ul>
+								<li>Her sunucuda kullanılabilir.</li>
+								<li>Ekstra 2 adet komut ekletme hakkı.</li>
+							</ul>
+						</div>
+              <button class="btn-hover color-9" onclick="discord()">Satın Al</button>
+
+					</div>
+				</div>
+
+     <div class="col-lg-4 col-md-6">
+					<div class="pricing_item">
+						<h3 class="p_title">Müzik Botu</h3>
+						<h1 class="p_price">30<small style="color: #fff">₺</small></h1>
+						<div class="p_list">
+							<ul>
+								<li>Her sunucuda kullanılabilir.</li>
+								<li>Ekstra komut ekletme hakkı mevcut değildir.</li>
+								<li>Dil desteği vardır.(<small>Türkçe/İngilizce</small>)</li>
+							</ul>
+            </div>
+            
+              <button class="btn-hover color-9" onclick="discord()">Satın Al</button>
+          </div>
+        </div>
+		     <div class="col-lg-4 col-md-6">
+					<div class="pricing_item">
+						<h3 class="p_title">Ekonomi Botu</h3>
+						<h1 class="p_price">45<small style="color: #fff">₺</small></h1>
+						<div class="p_list">
+							<ul>
+								<li>Her sunucuda kullanılabilir.</li>
+								<li>Ekstra komut ekletme hakkı mevcut değildir.</li>
+							</ul>
+            </div>
+              <button class="btn-hover color-9" onclick="discord()">Satın Al</button>
+          </div>
+        </div>
+			</div>
+		</div>
+	</section>
+<!-- ========== PRICING END ============== -->
+  
+    <!-- ======= CONTACT ======== -->
+    <style> 
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+textarea {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input[type=text]:focus {
+  border: 3px solid rgb(0, 89, 255);
+}
+textarea:focus {
+  border: 3px solid rgb(0, 89, 255);
+}
+</style>
+        <br><br><br>
+    <center><baslik id="contact">ILETISIM</baslik>
+<!-- Form Started -->
+<form action="https://formspree.io/f/mrgokzwb" method="post">    <div class="input-block">
+        <label for="Forum Gönderen"></label>
+        <input type="text" placeholder="Adınızı veya nickname'inizi yazınız." name="Forum Gönderen;" id="Forum Gönderen;" required>
+    </div>
+    <div class="input-block">
+      <label for="Eposta Adresi;"></label>
+        <input type="text" placeholder="Email adresinizi yazınız." name="Eposta Adresi;" id="Eposta Adresi;" required>
+    </div>            
+    <div class="input-block">
+        <label for="Konu;"></label>
+        <input placeholder="Konu başlığını yazınız." type="text" name="Konu;" id="Konu;" required>
+    </div>
+    <div class="textarea-block">
+        <label for="Mesaj;"></label>
+        <textarea placeholder="Konu hakkındaki mesajınızı yazınız." name="Mesaj;" id="Mesaj;" required></textarea>
+    </div>
+    <input type="hidden" name="_next" value="basarili.html"> 
+    <input class="btn-hover color-9" href="basarili.html" type="submit" value="Gönder"> <button class="btn-hover color-1"><span>Discorda Katıl </span></button>
+
+</form>
+
+  <!-- ========== FOOTER ============== -->
+<footer>
+	<svg viewBox="0 0 120 28">
+	 <defs> 
+		<filter id="goo">
+		  <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+		  <feColorMatrix in="blur" mode="matrix" values="
+			   1 0 0 0 0  
+			   0 1 0 0 0  
+			   0 0 1 0 0  
+			   0 0 0 13 -9" result="goo" />
+		  <xfeBlend in="SourceGraphic" in2="goo" />
+		</filter>
+		 <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+	  </defs> 
+	
+	   <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+	   <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+	 
+	 
+	  <g class="gooeff" filter="url(#goo)">
+	  <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+	 </g>  
+		<!-- g mask="url(#xxx)">
+		<path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+		</g>
+	  </g -->
+	
+	</svg>
+	
+	<div>Copyright 2020 &copy; Arix Market & Alone</div>
+</footer>
+
+<!-- ========== FOOTER END ========= -->
+  </body>
+  </html>
+  

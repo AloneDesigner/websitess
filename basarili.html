@@ -1,0 +1,120 @@
+<html lang="tr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="javascript/theme.js"></script>
+    <script defer src="javascript/back.js"></script>
+	    <script defer src="javascript/form.js"></script>
+
+  <link rel="stylesheet" href="css/titles.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/button.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/navmation.css" />
+  <link rel="stylesheet" href="css/boostrap.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/back.css" />
+  <link rel="stylesheet" href="css/form.css" />
+
+<a id="back"></a>
+<a id="index"></a>
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  
+
+   <!-- NAVBAR -->
+  <nav  style="background-color:  rgb(0, 89, 255); box-shadow: 0px 2px 10px #000;" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" style="color: #fff" id="anasayfa">Arix Market</a>
+      </div>
+      <div class="header pullUp">
+      <ul class="nav navbar-nav nav-links">
+        <li><a style="color: #fff" href="#">Anasayfa</a></li>
+        <li><a style="color: #fff" onclick="anasayfagec()">İletişim</a></li>
+        <li><a style="color: #fff" onclick="anasayfagec()">Ürünler</a></li>
+        <li><a style="color: #fff" onclick="anasayfagec()">Hakkımızda</a></li>
+      </ul>
+    </div>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <!-- NAVBAR END -->
+  
+<script>
+  
+function anasayfagec() {
+  alert("Bundan önce ana sayfaya gitmelisin!");
+}
+function discord() {
+var answer = window.confirm("Bu sayfadan ayrılıyorsunuz.");
+if (answer) {
+    location.href='https://discord.gg/smGDqPU';
+}
+else {
+}
+}
+
+</script>
+    <br><br><br><br><br><br><br><br><br><br><br>
+<div style="background-color: #fff" class="jumbotron text-center">
+  <h1 class="display-3">Başarılı <span style='color: green; font-size:100px;'>&#10004;</span></h1>
+  <p class="lead"><strong>En kısa sürede</strong> bize iletmiş olduğun email adresinden size geri dönüş sağlıyacağız.</p>
+  <hr>
+  <p>
+    Hala sorun mu var? <a href=""> Discorda katıl</a>
+  </p>
+  <p class="lead">
+    <a class="btn btn-primary btn-sm" href="index.html" role="button">Anasayfaya dön</a>
+  </p>
+</div>
+      <!-- ========== FOOTER ============== -->
+<footer>
+	<svg viewBox="0 0 120 28">
+	 <defs> 
+		<filter id="goo">
+		  <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+		  <feColorMatrix in="blur" mode="matrix" values="
+			   1 0 0 0 0  
+			   0 1 0 0 0  
+			   0 0 1 0 0  
+			   0 0 0 13 -9" result="goo" />
+		  <xfeBlend in="SourceGraphic" in2="goo" />
+		</filter>
+		 <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+	  </defs> 
+	
+	   <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+	   <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+	 
+	 
+	  <g class="gooeff" filter="url(#goo)">
+	  <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+	 </g>  
+		<!-- g mask="url(#xxx)">
+		<path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+		</g>
+	  </g -->
+	
+	</svg>
+	
+	<div>Copyright 2020 &copy; Arix Market</div>
+</footer>
+<!-- ========== FOOTER END ========= -->
+  </body>
+</html>

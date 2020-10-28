@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+body {
+  font-family: Lato, sans-serif;
+  --col-deepblue: #0059ff;
+    background-color: white;
+	  color: black;
+
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+a {
+  color:#fff;
+  text-decoration:none;
+}
+footer {
+  width:100%;
+  position:relative;
+  bottom:0px
+}
+footer div {
+  background-color: var(--col-deepblue);
+  margin: -5px 0px 0px 0px;
+  padding:0px;
+  color: #fff;
+  text-align:center;
+}
+svg {
+  width:100%;
+  overflow:visible;
+}
+
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count:infinite;
+  fill: #0059ff;
+}
+
+.drop2 {
+  animation-delay: 3s;
+  animation-duration:3s;
+}
+.drop3 {
+  animation-delay: -2s;
+  animation-duration:3.4s;
+}
+.drop4 {
+  animation-delay: 1.7s;
+}
+.drop5 {
+  animation-delay: 2.7s;
+  animation-duration:3.1s;
+}
+.drop6 {
+  animation-delay: -2.1s;
+  animation-duration:3.2s;
+}
+.gooeff {
+    filter: url(#goo);
+}
+#wave2 {
+  animation-duration:5s;
+  animation-direction: reverse;
+  opacity: .6
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity:.3;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(25px); 
+  }
+  30% {
+    transform: translateY(-10px) scale(.1);
+  }
+  30.001% {
+    transform: translateY(25px) scale(1); 
+  }
+  70% {
+    transform: translateY(25px); 
+  }
+  100% { 
+    transform: translateY(-10px) scale(.1);  
+  }
+}
+@keyframes wave {
+  to {transform: translateX(-100%);}
+}
+
+
+/* Pricing */
+.pricing_area {
+  position: relative;
+  padding: 120px 0 80px; 
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.pricing_item {
+  background: -webkit-linear-gradient(to right, #003585 0%, #006eff 51%, #003585 100%);
+  background: -moz-linear-gradient(to right, #003585 0%, #006eff 51%, #003585 100%);
+  background: -ms-linear-gradient(to right, #003585 0%, #006eff 51%, #003585 100%);
+  background: -o-linear-gradient(to right, #003585 0%, #006eff 51%, #003585 100%);
+  background: linear-gradient(to right, #003585 0%, #006eff 51%, #003585 100%);
+  text-align: center;
+  margin-bottom: 40px; 
+  border-radius: 25px;
+    transition: 0.5s;
+  font-family: "Poppins","sans-serif";
+}
+.pricing_item:hover {
+            box-shadow: 0 1px 0 #000, 0 2px 0 #000, 
+                     0 20px 30px #000; 
+}
+  .pricing_item h3.p_title {
+    font-size: 18px;
+    color: #fff;
+    padding: 35px 30px 25px;
+    margin: 0; }
+  .pricing_item h1.p_price {
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    padding: 30px;
+    background: #003585; }
+  .pricing_item ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    padding: 35px 50px 18px; }
+    .pricing_item ul li {
+      color: #ddd;
+      font-weight: 400;
+      padding: 14px 0;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+      font-family: "Roboto", sans-serif; }
+      .pricing_item ul li:nth-last-child(1) {
+        border-bottom: transparent; }
+  .pricing_item .p_btn {
+    padding-bottom: 50px; }
+    .pricing_item .p_btn .gradient_btn {
+      position: relative; }
+      .pricing_item .p_btn .gradient_btn span {
+        position: relative;
+        z-index: 2; }
+      .pricing_item .p_btn .gradient_btn:after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0;
+        bottom: 0; }
+  .pricing_item.active .p_btn .gradient_btn, .pricing_item:hover .p_btn .gradient_btn {
+    color: #003585;
+    box-shadow: 0px 10px 30px rgba(130, 82, 250, 0.2);
+    border: 2px solid transparent; }
+    .pricing_item.active .p_btn .gradient_btn:after, .pricing_item:hover .p_btn .gradient_btn:after {
+      border-radius: 5px;
+      background: -webkit-linear-gradient(to right, #3f82ff 0%, #0066ff 100%);
+      background: -moz-linear-gradient(to right, #3f82ff 0%, #0066ff 100%);
+      background: -o-linear-gradient(to right, #3f82ff 0%, #0066ff 100%);
+      background: linear-gradient(to right, #3f82ff 0%, #0066ff 100%); }
+
+/* End Pricing */
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #0098ff;
+  font-family: 'Poppins', sans-serif;
+}
+altmarket {
+  font-size:15px;
+  min-height: 9vh;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 5px
+}
+.logo{
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:22px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+
+.nav-links li{
+  list-style:none;
+  
+}
+.nav-links a{
+  color: rgb(226,226,226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight:bold;
+  font-size:14px;
+}
+
+.burger{
+  display:none;
+  cursor: pointer;
+}
+
+.burger div{
+  width:25px;
+  height:3px;
+  background-color:#fff;
+  margin: 5px;
+  transition: all 0.3s ease
+  
+}
+
+@media screen and (max-width:1024px){
+  .nav-links{
+    width:60%;
+  }
+}
+
+@media screen and (max-width:768px){
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    position:absolute;
+    right:0px;
+    height:92vh;
+    top: 8vh;
+    background-color:#0098ff;
+    display:flex;
+    flex-direction: column;  
+    align-items: center;
+    width:50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+    opacity: 0;
+  }
+  .burger{
+    display:block;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity:0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-40deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+  transform: rotate(90deg) translate(0px,0px);
+}
+
+.toggle .line3{
+  transform: rotate(35deg) translate(-5px,-6px);
+}
